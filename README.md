@@ -61,7 +61,6 @@ These metrics provide a clear understanding of how effectively the model disting
 
 * Python
 * Google Colab
-* scikit-learn
 * CSV file handling
 
 ---
@@ -75,14 +74,12 @@ These metrics provide a clear understanding of how effectively the model disting
 
 ---
 
-## Author
-
-Computer Science Student
-GitHub: shahabshahx
+## By:
+FarazHassan111
 
 
 ---
 
 ## Conclusion
 
-This project demonstrates how machine learning can be used to analyze user behavior and predict business outcomes. It provides a strong foundation for understanding classification models and real-world data preprocessing.
+This project illustrates how machine learning techniques can be applied to analyze user behavior and predict business results, providing a strong basis for understanding classification algorithms and real-world data preparation.
