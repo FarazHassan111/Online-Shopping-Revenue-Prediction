@@ -1,27 +1,27 @@
 Online Shopping Revenue Prediction using KNN
-Overview
-This project focuses on predicting whether an online shopping session will result in a purchase. By analyzing user behavior such as page visits, time spent on pages, bounce rates, and visitor type, a machine learning model is trained to identify patterns that lead to successful transactions.
+**Overview
+**This project focuses on predicting whether an online shopping session will result in a purchase. By analyzing user behavior such as page visits, time spent on pages, bounce rates, and visitor type, a machine learning model is trained to identify patterns that lead to successful transactions.
 
 The goal of this project is to demonstrate the practical application of supervised machine learning using real-world data.
 
-Problem Statement
-Online businesses often struggle to identify which visitors are most likely to make a purchase. Accurately predicting purchase intent can help improve marketing strategies, user experience, and overall revenue.
+**Problem Statement
+**Online businesses often struggle to identify which visitors are most likely to make a purchase. Accurately predicting purchase intent can help improve marketing strategies, user experience, and overall revenue.
 
 This project aims to solve that problem by using a K-Nearest Neighbors (KNN) classifier to predict shopping revenue outcomes.
 
-Dataset Description
-The dataset (shopping.csv) contains multiple features related to a user's interaction with an online store, including:
+**Dataset Description
+**The dataset (shopping.csv) contains multiple features related to a user's interaction with an online store, including:
 
-Number of pages visited
-Time spent on different page types
+**Number of pages visited
+**Time spent on different page types
 Bounce and exit rates
 Visitor type (new or returning)
 Weekend activity
 Revenue outcome (target variable)
 Categorical values are converted into numerical form so they can be processed by the machine learning model.
 
-Methodology
-The dataset is uploaded and read using Python’s CSV handling.
+**Methodology
+**The dataset is uploaded and read using Python’s CSV handling.
 Data preprocessing is performed to convert all values into numerical format.
 The data is split into training and testing sets (60% training, 40% testing).
 A K-Nearest Neighbors classifier (k = 1) is trained on the dataset.
@@ -30,14 +30,14 @@ Performance is evaluated using accuracy, sensitivity, and specificity.
 Model Evaluation
 The model’s performance is measured using:
 
-Correct Predictions
-Incorrect Predictions
+**Correct Predictions
+**Incorrect Predictions
 Sensitivity (True Positive Rate) – how well the model predicts actual purchases.
 Specificity (True Negative Rate) – how well the model predicts non-purchases.
 These metrics provide a clear understanding of how effectively the model distinguishes between purchasing and non-purchasing sessions.
 
-Technologies Used
-Python
+**Technologies Used
+**Python
 Google Colab
 scikit-learn
 CSV file handling
@@ -47,7 +47,7 @@ Run the program
 Upload shopping.csv when prompted
 View the prediction results and evaluation metrics
 Author
-Computer Science Student GitHub: FarazHassan
+FarazHassan
 
 Conclusion
 This project demonstrates how machine learning can be used to analyze user behavior and predict business outcomes. It provides a strong foundation for understanding classification models and real-world data preprocessing.
