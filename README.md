@@ -1,128 +1,53 @@
-Online Shopping Purchase Prediction (KNN)
-Project Description
-
-A Python machine learning project that uses the K-Nearest Neighbors algorithm to predict whether an online shopping session will result in a purchase.
-
+Online Shopping Revenue Prediction using KNN
 Overview
+This project focuses on predicting whether an online shopping session will result in a purchase. By analyzing user behavior such as page visits, time spent on pages, bounce rates, and visitor type, a machine learning model is trained to identify patterns that lead to successful transactions.
 
-Not all users who visit an online shopping website complete a purchase. This project applies a machine learning classification approach to predict customer purchasing behavior based on session data such as page visits, session duration, traffic type, visitor type, and more.
+The goal of this project is to demonstrate the practical application of supervised machine learning using real-world data.
 
-The model uses a K-Nearest Neighbors (KNN) classifier to analyze user behavior and predict whether revenue will be generated during a session.
+Problem Statement
+Online businesses often struggle to identify which visitors are most likely to make a purchase. Accurately predicting purchase intent can help improve marketing strategies, user experience, and overall revenue.
 
-Dataset
+This project aims to solve that problem by using a K-Nearest Neighbors (KNN) classifier to predict shopping revenue outcomes.
 
-The dataset (shopping.csv) contains approximately 12,000 user sessions with the following information:
+Dataset Description
+The dataset (shopping.csv) contains multiple features related to a user's interaction with an online store, including:
 
-Page visit counts and durations
-
+Number of pages visited
+Time spent on different page types
 Bounce and exit rates
-
-Month of visit
-
-Operating system, browser, and region
-
-Visitor type (Returning or New)
-
-Weekend indicator
-
+Visitor type (new or returning)
+Weekend activity
 Revenue outcome (target variable)
+Categorical values are converted into numerical form so they can be processed by the machine learning model.
 
-Features Used
+Methodology
+The dataset is uploaded and read using Python’s CSV handling.
+Data preprocessing is performed to convert all values into numerical format.
+The data is split into training and testing sets (60% training, 40% testing).
+A K-Nearest Neighbors classifier (k = 1) is trained on the dataset.
+The model predicts whether a purchase will occur.
+Performance is evaluated using accuracy, sensitivity, and specificity.
+Model Evaluation
+The model’s performance is measured using:
 
-Each data point includes the following 17 features:
+Correct Predictions
+Incorrect Predictions
+Sensitivity (True Positive Rate) – how well the model predicts actual purchases.
+Specificity (True Negative Rate) – how well the model predicts non-purchases.
+These metrics provide a clear understanding of how effectively the model distinguishes between purchasing and non-purchasing sessions.
 
-Administrative
-
-Administrative_Duration
-
-Informational
-
-Informational_Duration
-
-ProductRelated
-
-ProductRelated_Duration
-
-BounceRates
-
-ExitRates
-
-PageValues
-
-SpecialDay
-
-Month (0 = January, 11 = December)
-
-OperatingSystems
-
-Browser
-
-Region
-
-TrafficType
-
-VisitorType (0 = New, 1 = Returning)
-
-Weekend (0 = False, 1 = True)
-
-Target Variable
-
-1 → Revenue generated
-
-0 → No revenue generated
-
-Machine Learning Model
-
-Algorithm: K-Nearest Neighbors (KNN)
-
-k value: 1
-
-Train/Test Split: 60% training, 40% testing
-
-Evaluation Metrics
-
-The model is evaluated using:
-
-Sensitivity (True Positive Rate):
-Measures how well the model predicts users who make a purchase.
-
-Specificity (True Negative Rate):
-Measures how well the model predicts users who do not make a purchase.
-
-Project Structure
-Faraz_Ai_A2/
-│
-├── shopping.py
-├── shopping.csv
-├── README.md
-└── requirements.txt
-
-Requirements
-
-Python 3
-
+Technologies Used
+Python
+Google Colab
 scikit-learn
-
-Install dependencies using:
-
-pip install -r requirements.txt
-
+CSV file handling
 How to Run
-
-Ensure shopping.py and shopping.csv are in the same folder.
-
-Open a terminal in that folder.
-
-Run the program:
-
-python shopping.py
-
-Sample Output
-Correct: 4088
-Incorrect: 844
-True Positive Rate: 40.92%
-True Negative Rate: 90.68%
-
+Open the Python file in Google Colab
+Run the program
+Upload shopping.csv when prompted
+View the prediction results and evaluation metrics
 Author
+Computer Science Student GitHub: FarazHassan
 
-FarazHassan
+Conclusion
+This project demonstrates how machine learning can be used to analyze user behavior and predict business outcomes. It provides a strong foundation for understanding classification models and real-world data preprocessing.
